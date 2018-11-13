@@ -1,0 +1,48 @@
+package com.qualcomm.qcnvitems;
+
+public class QcNvItemIds {
+    public static final int NV_AIR_CNT_I = 168;
+    public static final int NV_ANALOG_HOME_SID_I = 18;
+    public static final int NV_AUTO_ANSWER_I = 74;
+    public static final int NV_BACKUP_I = 2497;
+    public static final int NV_CALIBRATATE_INFO_I = 6860;
+    public static final int NV_COUNT_I = 31;
+    public static final int NV_DIR_NUMBER_I = 178;
+    public static final int NV_DS_DEFAULT_BAUDRATE_I = 454;
+    public static final int NV_ECC_LIST_I = 564;
+    public static final int NV_ENCRYPT_IMEI_I = 2500;
+    public static final int NV_EVRC_PRI_I = 279;
+    public static final int NV_FACTORY_DATA_2_I = 2498;
+    public static final int NV_FTM_MODE_I = 453;
+    public static final int NV_GPS1_PDE_ADDRESS_I = 401;
+    public static final int NV_GPS1_PDE_PORT_I = 426;
+    public static final int NV_GPS_SNR_I = 6856;
+    public static final int NV_HOME_SID_NID_I = 259;
+    public static final int NV_IMSI_11_12_I = 177;
+    public static final int NV_IMSI_I = 208;
+    public static final int NV_IMSI_MCC_I = 176;
+    public static final int NV_IMSI_T_11_12_I = 265;
+    public static final int NV_IMSI_T_ADDR_NUM_I = 266;
+    public static final int NV_IMSI_T_MCC_I = 264;
+    public static final int NV_IMSI_T_S1_I = 262;
+    public static final int NV_IMSI_T_S2_I = 263;
+    public static final int NV_LIGHT_SENSOR_I = 6858;
+    public static final int NV_LOCK_CODE_I = 82;
+    public static final int NV_MIN1_I = 32;
+    public static final int NV_MIN2_I = 33;
+    public static final int NV_MOB_CAI_REV_I = 6;
+    public static final int NV_OPPO_CARRIER_VERSION_I = 6853;
+    public static final int NV_OPPO_CUSTOM_DATA_I = 50049;
+    public static final int NV_OPPO_PLMN_LIST_I = 50104;
+    public static final int NV_OPPO_PRODUCT_LINE_TEST_I = 6859;
+    public static final int NV_PCB_NUMBER_I = 6855;
+    public static final int NV_PCDMACH_I = 20;
+    public static final int NV_PREF_VOICE_SO_I = 285;
+    public static final int NV_ROAM_CNT_I = 169;
+    public static final int NV_SCDMACH_I = 21;
+    public static final int NV_SEC_CODE_I = 85;
+    public static final int NV_SERVICE_DOMAIN_PREF_I = 850;
+    public static final int NV_SID_NID_I = 38;
+    public static final int NV_SPC_CHANGE_ENABLED_I = 296;
+    public static final int NV_WIFI_PERF_I = 6857;
+}

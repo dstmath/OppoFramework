@@ -1,0 +1,229 @@
+package android.util;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.Reader;
+import java.io.StringReader;
+import java.io.UnsupportedEncodingException;
+import org.apache.harmony.xml.ExpatReader;
+import org.kxml2.io.KXmlParser;
+import org.xml.sax.ContentHandler;
+import org.xml.sax.InputSource;
+import org.xml.sax.SAXException;
+import org.xml.sax.XMLReader;
+import org.xmlpull.v1.XmlPullParser;
+import org.xmlpull.v1.XmlPullParserException;
+import org.xmlpull.v1.XmlPullParserFactory;
+import org.xmlpull.v1.XmlSerializer;
+
+/*  JADX ERROR: NullPointerException in pass: ReSugarCode
+    java.lang.NullPointerException
+    	at jadx.core.dex.visitors.ReSugarCode.initClsEnumMap(ReSugarCode.java:159)
+    	at jadx.core.dex.visitors.ReSugarCode.visit(ReSugarCode.java:44)
+    	at jadx.core.dex.visitors.DepthTraversal.visit(DepthTraversal.java:12)
+    	at jadx.core.ProcessClass.process(ProcessClass.java:32)
+    	at jadx.core.ProcessClass.lambda$processDependencies$0(ProcessClass.java:51)
+    	at java.lang.Iterable.forEach(Iterable.java:75)
+    	at jadx.core.ProcessClass.processDependencies(ProcessClass.java:51)
+    	at jadx.core.ProcessClass.process(ProcessClass.java:37)
+    	at jadx.api.JadxDecompiler.processClass(JadxDecompiler.java:292)
+    	at jadx.api.JavaClass.decompile(JavaClass.java:62)
+    	at jadx.api.JadxDecompiler.lambda$appendSourcesSave$0(JadxDecompiler.java:200)
+    */
+/*  JADX ERROR: NullPointerException in pass: ExtractFieldInit
+    java.lang.NullPointerException
+    	at jadx.core.dex.visitors.ExtractFieldInit.checkStaticFieldsInit(ExtractFieldInit.java:58)
+    	at jadx.core.dex.visitors.ExtractFieldInit.visit(ExtractFieldInit.java:44)
+    	at jadx.core.dex.visitors.ExtractFieldInit.visit(ExtractFieldInit.java:42)
+    	at jadx.core.dex.visitors.DepthTraversal.visit(DepthTraversal.java:12)
+    	at jadx.core.ProcessClass.process(ProcessClass.java:32)
+    	at jadx.core.ProcessClass.lambda$processDependencies$0(ProcessClass.java:51)
+    	at java.lang.Iterable.forEach(Iterable.java:75)
+    	at jadx.core.ProcessClass.processDependencies(ProcessClass.java:51)
+    	at jadx.core.ProcessClass.process(ProcessClass.java:37)
+    	at jadx.api.JadxDecompiler.processClass(JadxDecompiler.java:292)
+    	at jadx.api.JavaClass.decompile(JavaClass.java:62)
+    	at jadx.api.JadxDecompiler.lambda$appendSourcesSave$0(JadxDecompiler.java:200)
+    */
+public class Xml {
+    public static String FEATURE_RELAXED;
+
+    /*  JADX ERROR: NullPointerException in pass: EnumVisitor
+        java.lang.NullPointerException
+        	at jadx.core.dex.visitors.EnumVisitor.visit(EnumVisitor.java:102)
+        	at jadx.core.dex.visitors.DepthTraversal.visit(DepthTraversal.java:12)
+        	at jadx.core.dex.visitors.DepthTraversal.lambda$visit$0(DepthTraversal.java:13)
+        	at java.util.ArrayList.forEach(ArrayList.java:1251)
+        	at jadx.core.dex.visitors.DepthTraversal.visit(DepthTraversal.java:13)
+        	at jadx.core.ProcessClass.process(ProcessClass.java:32)
+        	at jadx.core.ProcessClass.lambda$processDependencies$0(ProcessClass.java:51)
+        	at java.lang.Iterable.forEach(Iterable.java:75)
+        	at jadx.core.ProcessClass.processDependencies(ProcessClass.java:51)
+        	at jadx.core.ProcessClass.process(ProcessClass.java:37)
+        	at jadx.api.JadxDecompiler.processClass(JadxDecompiler.java:292)
+        	at jadx.api.JavaClass.decompile(JavaClass.java:62)
+        	at jadx.api.JadxDecompiler.lambda$appendSourcesSave$0(JadxDecompiler.java:200)
+        */
+    public enum Encoding {
+        ;
+        
+        final String expatName;
+
+        /*  JADX ERROR: Method load error
+            jadx.core.utils.exceptions.DecodeException: Load method exception: bogus opcode: 0073 in method: android.util.Xml.Encoding.<clinit>():void, dex: 
+            	at jadx.core.dex.nodes.MethodNode.load(MethodNode.java:118)
+            	at jadx.core.dex.nodes.ClassNode.load(ClassNode.java:248)
+            	at jadx.core.dex.nodes.ClassNode.load(ClassNode.java:254)
+            	at jadx.core.ProcessClass.process(ProcessClass.java:29)
+            	at jadx.core.ProcessClass.lambda$processDependencies$0(ProcessClass.java:51)
+            	at java.lang.Iterable.forEach(Iterable.java:75)
+            	at jadx.core.ProcessClass.processDependencies(ProcessClass.java:51)
+            	at jadx.core.ProcessClass.process(ProcessClass.java:37)
+            	at jadx.api.JadxDecompiler.processClass(JadxDecompiler.java:292)
+            	at jadx.api.JavaClass.decompile(JavaClass.java:62)
+            	at jadx.api.JadxDecompiler.lambda$appendSourcesSave$0(JadxDecompiler.java:200)
+            Caused by: java.lang.IllegalArgumentException: bogus opcode: 0073
+            	at com.android.dx.io.OpcodeInfo.get(OpcodeInfo.java:1227)
+            	at com.android.dx.io.OpcodeInfo.getName(OpcodeInfo.java:1234)
+            	at jadx.core.dex.instructions.InsnDecoder.decode(InsnDecoder.java:581)
+            	at jadx.core.dex.instructions.InsnDecoder.process(InsnDecoder.java:74)
+            	at jadx.core.dex.nodes.MethodNode.load(MethodNode.java:104)
+            	... 10 more
+            */
+        static {
+            /*
+            // Can't load method instructions: Load method exception: bogus opcode: 0073 in method: android.util.Xml.Encoding.<clinit>():void, dex: 
+            */
+            throw new UnsupportedOperationException("Method not decompiled: android.util.Xml.Encoding.<clinit>():void");
+        }
+
+        private Encoding(String expatName) {
+            this.expatName = expatName;
+        }
+    }
+
+    static class XmlSerializerFactory {
+        static final String TYPE = "org.kxml2.io.KXmlParser,org.kxml2.io.KXmlSerializer";
+        static final XmlPullParserFactory instance = null;
+
+        /*  JADX ERROR: Method load error
+            jadx.core.utils.exceptions.DecodeException: Load method exception: bogus opcode: 0073 in method: android.util.Xml.XmlSerializerFactory.<clinit>():void, dex: 
+            	at jadx.core.dex.nodes.MethodNode.load(MethodNode.java:118)
+            	at jadx.core.dex.nodes.ClassNode.load(ClassNode.java:248)
+            	at jadx.core.dex.nodes.ClassNode.load(ClassNode.java:254)
+            	at jadx.core.ProcessClass.process(ProcessClass.java:29)
+            	at jadx.core.ProcessClass.lambda$processDependencies$0(ProcessClass.java:51)
+            	at java.lang.Iterable.forEach(Iterable.java:75)
+            	at jadx.core.ProcessClass.processDependencies(ProcessClass.java:51)
+            	at jadx.core.ProcessClass.process(ProcessClass.java:37)
+            	at jadx.api.JadxDecompiler.processClass(JadxDecompiler.java:292)
+            	at jadx.api.JavaClass.decompile(JavaClass.java:62)
+            	at jadx.api.JadxDecompiler.lambda$appendSourcesSave$0(JadxDecompiler.java:200)
+            Caused by: java.lang.IllegalArgumentException: bogus opcode: 0073
+            	at com.android.dx.io.OpcodeInfo.get(OpcodeInfo.java:1227)
+            	at com.android.dx.io.OpcodeInfo.getName(OpcodeInfo.java:1234)
+            	at jadx.core.dex.instructions.InsnDecoder.decode(InsnDecoder.java:581)
+            	at jadx.core.dex.instructions.InsnDecoder.process(InsnDecoder.java:74)
+            	at jadx.core.dex.nodes.MethodNode.load(MethodNode.java:104)
+            	... 10 more
+            */
+        static {
+            /*
+            // Can't load method instructions: Load method exception: bogus opcode: 0073 in method: android.util.Xml.XmlSerializerFactory.<clinit>():void, dex: 
+            */
+            throw new UnsupportedOperationException("Method not decompiled: android.util.Xml.XmlSerializerFactory.<clinit>():void");
+        }
+
+        XmlSerializerFactory() {
+        }
+    }
+
+    /*  JADX ERROR: Method load error
+        jadx.core.utils.exceptions.DecodeException: Load method exception: bogus opcode: 0073 in method: android.util.Xml.<clinit>():void, dex: 
+        	at jadx.core.dex.nodes.MethodNode.load(MethodNode.java:118)
+        	at jadx.core.dex.nodes.ClassNode.load(ClassNode.java:248)
+        	at jadx.core.ProcessClass.process(ProcessClass.java:29)
+        	at jadx.core.ProcessClass.lambda$processDependencies$0(ProcessClass.java:51)
+        	at java.lang.Iterable.forEach(Iterable.java:75)
+        	at jadx.core.ProcessClass.processDependencies(ProcessClass.java:51)
+        	at jadx.core.ProcessClass.process(ProcessClass.java:37)
+        	at jadx.api.JadxDecompiler.processClass(JadxDecompiler.java:292)
+        	at jadx.api.JavaClass.decompile(JavaClass.java:62)
+        	at jadx.api.JadxDecompiler.lambda$appendSourcesSave$0(JadxDecompiler.java:200)
+        Caused by: java.lang.IllegalArgumentException: bogus opcode: 0073
+        	at com.android.dx.io.OpcodeInfo.get(OpcodeInfo.java:1227)
+        	at com.android.dx.io.OpcodeInfo.getName(OpcodeInfo.java:1234)
+        	at jadx.core.dex.instructions.InsnDecoder.decode(InsnDecoder.java:581)
+        	at jadx.core.dex.instructions.InsnDecoder.process(InsnDecoder.java:74)
+        	at jadx.core.dex.nodes.MethodNode.load(MethodNode.java:104)
+        	... 9 more
+        */
+    static {
+        /*
+        // Can't load method instructions: Load method exception: bogus opcode: 0073 in method: android.util.Xml.<clinit>():void, dex: 
+        */
+        throw new UnsupportedOperationException("Method not decompiled: android.util.Xml.<clinit>():void");
+    }
+
+    public static void parse(String xml, ContentHandler contentHandler) throws SAXException {
+        try {
+            XMLReader reader = new ExpatReader();
+            reader.setContentHandler(contentHandler);
+            reader.parse(new InputSource(new StringReader(xml)));
+        } catch (IOException e) {
+            throw new AssertionError(e);
+        }
+    }
+
+    public static void parse(Reader in, ContentHandler contentHandler) throws IOException, SAXException {
+        XMLReader reader = new ExpatReader();
+        reader.setContentHandler(contentHandler);
+        reader.parse(new InputSource(in));
+    }
+
+    public static void parse(InputStream in, Encoding encoding, ContentHandler contentHandler) throws IOException, SAXException {
+        XMLReader reader = new ExpatReader();
+        reader.setContentHandler(contentHandler);
+        InputSource source = new InputSource(in);
+        source.setEncoding(encoding.expatName);
+        reader.parse(source);
+    }
+
+    public static XmlPullParser newPullParser() {
+        try {
+            KXmlParser parser = new KXmlParser();
+            parser.setFeature("http://xmlpull.org/v1/doc/features.html#process-docdecl", true);
+            parser.setFeature("http://xmlpull.org/v1/doc/features.html#process-namespaces", true);
+            return parser;
+        } catch (XmlPullParserException e) {
+            throw new AssertionError();
+        }
+    }
+
+    public static XmlSerializer newSerializer() {
+        try {
+            return XmlSerializerFactory.instance.newSerializer();
+        } catch (XmlPullParserException e) {
+            throw new AssertionError(e);
+        }
+    }
+
+    public static Encoding findEncodingByName(String encodingName) throws UnsupportedEncodingException {
+        if (encodingName == null) {
+            return Encoding.UTF_8;
+        }
+        for (Encoding encoding : Encoding.values()) {
+            if (encoding.expatName.equalsIgnoreCase(encodingName)) {
+                return encoding;
+            }
+        }
+        throw new UnsupportedEncodingException(encodingName);
+    }
+
+    public static AttributeSet asAttributeSet(XmlPullParser parser) {
+        if (parser instanceof AttributeSet) {
+            return (AttributeSet) parser;
+        }
+        return new XmlPullAttributes(parser);
+    }
+}

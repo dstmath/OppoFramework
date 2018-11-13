@@ -1,0 +1,33 @@
+package com.suntek.mway.rcs.client.aidl.plugin.entity.richscrn;
+
+public enum PhoneEvent {
+    DEFAULT_EVENT("0000000000"),
+    LAUNCH_V_CALL("1110000000"),
+    V_CALL_IN_RINGING("1220018000"),
+    V_CALL_CONN_CALLER("1130020000"),
+    V_CALL_CONN_CALLED("123 00 20000"),
+    V_CALL_HANG_UP_CALLER("1140020000"),
+    V_CALL_HANG_UP_CALLED("1240020000"),
+    LAUNCH_VD_CALL("2110000000"),
+    VD_CALL_IN_RINGING("2220000000"),
+    VD_CALL_CONN_CALLER("2130020000"),
+    VD_CALL_CONN_CALLED("2230020000"),
+    VD_CALL_HANG_UP_CALLER("2140020000"),
+    VD_CALL_HANG_UP_CALLED("2240020000"),
+    CONTACT_READING_REQ_SCRN("9331011000"),
+    CONTACT_READING_SET_SCRN("9331012000"),
+    CONTACT_UPDATE_FINISH("9341020000"),
+    FACTORY_SETTING_READY_RESTORE("9319030000"),
+    FACTORY_SETTING_RESTORE_FINISH("9349030000"),
+    SIM_CARD_CHANGED("9449040000");
+    
+    private String ctrlString;
+
+    private PhoneEvent(String ctrlString) {
+        this.ctrlString = ctrlString;
+    }
+
+    public String getCtrlStr() {
+        return this.ctrlString;
+    }
+}
