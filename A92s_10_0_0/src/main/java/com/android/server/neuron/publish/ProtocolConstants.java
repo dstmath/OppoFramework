@@ -1,0 +1,45 @@
+package com.android.server.neuron.publish;
+
+public final class ProtocolConstants {
+    public static final int APP_TYPE_ALL = 2;
+    public static final int APP_TYPE_SYSTEM_APP = 0;
+    public static final int APP_TYPE_USER_APP = 1;
+    public static final int BACKGROUND_APP_CMD = 2;
+    public static final int BATTERY_CMD = 8;
+    public static final int CRASH_APP_CMD = 3;
+    public static final int DATABASE_CMD = 9;
+    public static final String DEFAULT_VERSION = "-1";
+    public static final int FOREGROUND_APP_CMD = 1;
+    public static final int INDICATION_CMD_GET_BASE = 100;
+    public static final int INDICATION_CMD_SET_BASE = 500;
+    public static final int INSTALLED_APP_CMD = 13;
+    public static final int LOCATION_CMD = 10;
+    public static final int MIN_CMD = 0;
+    public static final int MOBILE_NET_CMD = 5;
+    public static final int NETWORK_CMD = 7;
+    public static final int RECENT_APP_CMD = 14;
+    public static final int REQUEST_TOKEN = 61695;
+    public static final int REQ_ACTIVITY_STATUS_ENTER_FORGROUND = 1;
+    public static final int REQ_ACTIVITY_STATUS_EXIT = 3;
+    public static final int REQ_ACTIVITY_STATUS_EXIT_FORGROUND = 0;
+    public static final int REQ_ACTIVITY_STATUS_MIN = -1;
+    public static final int REQ_ACTIVITY_STATUS_STARTED = 2;
+    public static final int REQ_NETWORK_STATUS_REACHABLE = 1;
+    public static final int REQ_NETWORK_STATUS_UNREACHABLE = 0;
+    public static final int RESPONSE_OK = 1;
+    public static final int RESPONSE_TOKEN = 61695;
+    public static final int RSSI_NET_CMD = 6;
+    public static final int SCREEN_CMD = 12;
+    public static final int SCREEN_TURN_OFF = 1;
+    public static final int SCREEN_TURN_ON = 0;
+    public static final int SENSOR_CMD = 11;
+    public static final int SUPER_APP_CMD = 4;
+    public static final int UNSOL_GET_APP_LIST = 103;
+    public static final int UNSOL_GET_BG_APP_LIST = 101;
+    public static final int UNSOL_GET_RECENT_APP_LIST = 104;
+    public static final int UNSOL_GET_SENSOR_INFO = 102;
+    public static final int UNSOL_SET_ELSA_MODE = 504;
+    public static final int UNSOL_SET_GPS_UPDATE_FREQ = 502;
+    public static final int UNSOL_SET_RSSI_UPDATE_FREQ = 501;
+    public static final int UNSOL_SET_SENSOR_UPDATE_FREQ = 503;
+}
