@@ -1,4 +1,4 @@
-package com.android.server.am;
+hupackage com.android.server.am;
 
 import android.app.IColorActivityManager;
 import android.common.OppoFeatureCache;

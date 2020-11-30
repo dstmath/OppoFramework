@@ -1,0 +1,34 @@
+<permissions>
+<feature name="oppo.customize.function.silentinstall" />
+<feature name="oppo.customize.function.killprocess" />
+<feature name="oppo.customize.function.control_app_install" />
+<feature name="oppo.customize.function.disallow_app_run" />
+<feature name="oppo.customize.function.checkpermission" />
+<feature name="oppo.customize.function.analyse_text" />
+<feature name="oppo.customize.function.mdpoe" />
+<feature name="oppo.customize.function.set_device_owner" />
+<feature name="oppo.settings.disable_custom_accessibilty.support" />
+<feature name="oppo.customize.function.control_capture" />
+<feature name="oppo.customize.function.set_airplane_mode" />
+<unavailable-feature name="oppo.childspace.support" />
+<unavailable-feature name="oppo.launcher.download.progress.support" />
+<feature name="oppo.business.custom" />
+<feature name="oppo.common_center.army_app.hide" />
+<feature name="oppo.common_center.network.interface" />
+<feature name="oppo.settings.verification.dialog.disallow" />
+<feature name="oppo.settings.account.dialog.disallow" />
+<feature name="oppo.customize.function.disable_fingerprint_face" />
+<feature name="oppo.common.gov.black_or_white_contactlist" />
+<feature name="oppo.phone.nodisplayrecord" />
+<feature name="oppo.phone.record.for.third-party" />
+<feature name="oppo.customize.function.factoryreset" />
+<feature name="oppo.browser.harmonynet" />
+<feature name="oppo.gov.non.emergency.call.disabled" />
+<feature name="oppo.common.gov.hide.contacts_number" />
+<feature name="oppo.common.gov.hide.call_log" />
+<feature name="oppo.phone.gov.callforwarding.disabled" />
+<feature name="oppo.customize.function.control_app_install" />
+<feature name="oppo.phone.call.times.limitation" />
+<feature name="oppo.customize.default_launcher_settings" />
+<feature name="oppo.customize.function.addprotectapp" />
+</permissions>
