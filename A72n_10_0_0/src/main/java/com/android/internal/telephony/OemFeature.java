@@ -1,0 +1,103 @@
+package com.android.internal.telephony;
+
+import android.os.SystemProperties;
+
+public class OemFeature {
+    public static final String FEATURE_BASE = SystemProperties.get("persist.sys.oem_feature", PhoneConfigurationManager.SSSS);
+    public static final boolean FEATURE_CALL_STABILITY = (FEATURE_BASE.indexOf("c_sta") < 0);
+    public static final boolean FEATURE_COMM_STACK = (FEATURE_BASE.indexOf("cm_st") >= 0);
+    public static final boolean FEATURE_DATA_DO_RECOVERY_CLOSE_5G_CASE_0 = true;
+    public static final boolean FEATURE_DATA_DO_RECOVERY_CLOSE_5G_CASE_1 = true;
+    public static final boolean FEATURE_DATA_POWER_OPTIMIZE = true;
+    public static final boolean FEATURE_NW_CALL_1X_INCALL_MMI_CODE = true;
+    public static final boolean FEATURE_NW_CALL_OPPO_ECC_SOLUTION = true;
+    public static final boolean FEATURE_NW_CALL_POLICY_SALEMODE_CONTROL = true;
+    public static final boolean FEATURE_NW_CALL_PREVENT_DUPLICATE_CDMACW = true;
+    public static final boolean FEATURE_NW_DATA_COMM_OPTIMI = true;
+    public static final boolean FEATURE_NW_DATA_CTA_SUPPORT = true;
+    public static final boolean FEATURE_NW_DATA_DISCONNECT_FOR_PEER_SIM_IMS_CALL = true;
+    public static final boolean FEATURE_NW_DATA_DOMESTIC_ROAMING = true;
+    public static final boolean FEATURE_NW_DATA_FAST_DORMANCY = true;
+    public static final boolean FEATURE_NW_DATA_HONGBAO = true;
+    public static final boolean FEATURE_NW_DATA_MTU = true;
+    public static final boolean FEATURE_NW_DATA_OPERATOR_NUMERIC = true;
+    public static final boolean FEATURE_NW_DATA_POLICY_SALEMODE_CONTROL = true;
+    public static final boolean FEATURE_NW_DATA_ROAMING_ENABLED = true;
+    public static final boolean FEATURE_NW_DATA_STALL_ALARM = true;
+    public static final boolean FEATURE_NW_DATA_TELSTRA = true;
+    public static final boolean FEATURE_NW_DATA_VSIM = true;
+    public static final boolean FEATURE_NW_DATA_WLAN_ASSIST = true;
+    public static final boolean FEATURE_NW_MMS_BUG_FIX_AVOID_FIRST_TIME_MO_SMS_DELAY_4_SECONDS_WHEN_REBOOT = true;
+    public static final boolean FEATURE_NW_MMS_BUG_FIX_GOOGLE_ORIGINAL = true;
+    public static final boolean FEATURE_NW_MMS_BUG_FIX_IN_CASE_OF_MO_IMS_SMS_RECURSSIVE = true;
+    public static final boolean FEATURE_NW_MMS_CELLLOCATION_CHECK_BUNDLE_KEY_TYPE = true;
+    public static final boolean FEATURE_NW_MMS_IGNORE_GOOGLE_ORIGINAL_NOTIFICATION_PS_CS = true;
+    public static final boolean FEATURE_NW_MMS_LOG_CONTROL = true;
+    public static final boolean FEATURE_NW_MMS_MO_CB_REQUEST_DISABLE_DUPLICATE = true;
+    public static final boolean FEATURE_NW_MMS_MO_CDMA_CT_IMSSMS_AUTOREGISTER = true;
+    public static final boolean FEATURE_NW_MMS_MO_CDMA_CT_SMS_AUTOREGISTER = true;
+    public static final boolean FEATURE_NW_MMS_MO_CDMA_SMS_ON_DC_CHANNEL = true;
+    public static final boolean FEATURE_NW_MMS_MO_IMSSMS_ERROR30_RETY_TO_SGS = true;
+    public static final boolean FEATURE_NW_MMS_MO_MT_DEFULT_SMS_MMS_PACKAGE_NAME_COM_ANDROID_MMS = true;
+    public static final boolean FEATURE_NW_MMS_MO_MT_MMS_PERIOD_NOT_ALLOW_INTERNET_WHEN_DATA_SWITCH_OFF_OR_DATA_ROAMING_OFF = true;
+    public static final boolean FEATURE_NW_MMS_MO_MT_MMS_WHEN_DATA_DISABLE_IN_ROAMING_MOVISTAR = true;
+    public static final boolean FEATURE_NW_MMS_MO_MT_MMS_WHEN_DATA_DISABLE_NON_ROAMING_ALL = true;
+    public static final boolean FEATURE_NW_MMS_MO_MT_SMS_RUNTIME_EXCEPTION_CHECK = true;
+    public static final boolean FEATURE_NW_MMS_MO_SIMSMS_GIVE_INTERFACE_GET_DESTINATION_TO_UI = true;
+    public static final boolean FEATURE_NW_MMS_MO_SMS_COUNT_ENABLE = true;
+    public static final boolean FEATURE_NW_MMS_MO_SMS_DISABLE_MAXALLOW_AT_CHECKPERIOD = true;
+    public static final boolean FEATURE_NW_MMS_MO_SMS_FILTER_TIMEOUT_REDUCE_MAX_SECONDS = true;
+    public static final boolean FEATURE_NW_MMS_MO_SMS_FORCE_7BIT_16BIT = true;
+    public static final boolean FEATURE_NW_MMS_MO_SMS_GET_PACKAGE_WHICH_SHAREUID = true;
+    public static final boolean FEATURE_NW_MMS_MO_SMS_GIVE_WRITE_SMS_DB_PERMISSION_TO_NONPLATFORM_PACKAGES = true;
+    public static final boolean FEATURE_NW_MMS_MO_SMS_GIVE_WRITE_SMS_DB_PERMISSION_TO_PLATFORM_PACKAGES = true;
+    public static final boolean FEATURE_NW_MMS_MO_SMS_GSM8IT_ENABLE = true;
+    public static final boolean FEATURE_NW_MMS_MO_SMS_MODEM_WMS_MAX_RETRY_TIME_3 = true;
+    public static final boolean FEATURE_NW_MMS_MO_SMS_MODEM_WMS_ONLY_RETRY_ONCE_WITH_RP_ERROR38 = true;
+    public static final boolean FEATURE_NW_MMS_MO_SMS_MODEM_WMS_RETRY_INTERVAL_5_10 = true;
+    public static final boolean FEATURE_NW_MMS_MO_SMS_NOT_SHOW_SMS_IN_UI_FOR_PLATFORM_PACKAGES = true;
+    public static final boolean FEATURE_NW_MMS_MO_SMS_NOT_SHOW_SMS_IN_UI_WHEN_SAFE_DIALOG_SHOW = false;
+    public static final boolean FEATURE_NW_MMS_MO_SMS_PREMIUM_NUMBER_NOT_CHECK_BY_ROM_UE = true;
+    public static final boolean FEATURE_NW_MMS_MO_SMS_RETRY_MODEM_WMS_DEFAULT_RETRY_PERIOD_120_DEFAULT_RETRY_INTERVAL_45 = true;
+    public static final boolean FEATURE_NW_MMS_MO_SMS_RETRY_TELEPHONY_MAX_1 = true;
+    public static final boolean FEATURE_NW_MMS_MT_CB_CHINA_CDMA = true;
+    public static final boolean FEATURE_NW_MMS_MT_CB_CHINA_GSM = true;
+    public static final boolean FEATURE_NW_MMS_MT_CB_EXP_CDMA = false;
+    public static final boolean FEATURE_NW_MMS_MT_CB_EXP_GSM = true;
+    public static final boolean FEATURE_NW_MMS_MT_CB_FOR_GSM_NONDDS = true;
+    public static final boolean FEATURE_NW_MMS_MT_CB_FOR_LTE_NONDDS = true;
+    public static final boolean FEATURE_NW_MMS_MT_CB_RAKUTEN_DISABLE_DUPLICATE_IN_MODEM = true;
+    public static final boolean FEATURE_NW_MMS_MT_SMS_BUGFIX_SLOT2_RECEIVE_SMS_BUT_ACTUALLY_SEND_TO_SLOT1 = true;
+    public static final boolean FEATURE_NW_MMS_MT_SMS_GIVE_MSGTYPE_TO_UI = true;
+    public static final boolean FEATURE_NW_MMS_MT_SMS_MMS_COUNT_ENABLE = true;
+    public static final boolean FEATURE_NW_MMS_MT_SMS_MMS_DEFAULT_PACKAGE_DIALOG_ALERT = true;
+    public static final boolean FEATURE_NW_MMS_MT_SMS_MMS_VERIFTYCODE_ALLOW_ABORT_BY_APP = true;
+    public static final boolean FEATURE_NW_MMS_MT_SMS_NUMBER_ADD_OPPO_BLOCK_CHECHER = true;
+    public static final boolean FEATURE_NW_MMS_MT_SMS_NUMBER_ADD_OPPO_BLOCK_CHECHER_SHUANGYU = true;
+    public static final boolean FEATURE_NW_MMS_MT_WAPPUSH_ENABLE = true;
+    public static final boolean FEATURE_NW_MMS_NECESSARY_DEBUG_LOG = true;
+    public static final boolean FEATURE_NW_REG_OEM_RIL_REQ = true;
+    public static final boolean FEATURE_NW_REG_SWITCH_SMOOTH = SystemProperties.get("persist.sys.oem_smooth", OppoModemLogManager.DEFAULT_MODEMDUMP_POSTBACK).equals("1");
+    public static final boolean FEATURE_NW_SIM_CHANGE_REGION = true;
+    public static final boolean FEATURE_NW_SIM_CMCC_AUTO_REG = true;
+    public static final boolean FEATURE_NW_SIM_HOTSWAP = true;
+    public static final boolean FEATURE_NW_SIM_LOCALE_CHANGED = true;
+    public static final boolean FEATURE_NW_SIM_SOFT_SIM = true;
+    public static final boolean FEATURE_OPPO_COMM_AOL;
+    public static final boolean FEATURE_OPPO_COMM_ORIENTATION = (FEATURE_BASE.indexOf("cm_ori") < 0);
+    public static final boolean FEATURE_OPPO_COMM_PROXIMITY = (FEATURE_BASE.indexOf("cm_pss") < 0);
+    public static final boolean FEATURE_ROM_MMS_MO_SMS_SMSMANAGER_OLD_INTERFACE = true;
+    public static final boolean FEATURE_ROM_MMS_MO_SMS_WITHOUT_SUBID_NEED_DIALOG_ALERT_TO_SET_SUBID = false;
+    public static final boolean FEATURE_ROM_MMS_MT_SMS_FBE_FIND_PHONE = true;
+    public static final boolean FEATURE_ROM_MMS_MT_SMS_SHOW_BLOCK_SMS_IN_UI = true;
+    public static final int ORIENTATION_MAX_TIMER = 0;
+    public static final int ORIENTATION_MAX_TIMES = 0;
+
+    static {
+        boolean z = true;
+        if (FEATURE_BASE.indexOf("cm_aol") < 0) {
+            z = false;
+        }
+        FEATURE_OPPO_COMM_AOL = z;
+    }
+}
